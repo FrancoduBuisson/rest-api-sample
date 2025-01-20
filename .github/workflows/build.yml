@@ -22,10 +22,10 @@ jobs:
         dotnet-version: '7.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore SampleRestApi/SampleRestApi.csproj
+      run: dotnet restore SampleRestApi/SampleRestApi/SampleRestApi.csproj
 
     - name: Build
-      run: dotnet build SampleRestApi/SampleRestApi.csproj --no-restore
+      run: dotnet build SampleRestApi/SampleRestApi/SampleRestApi.csproj --no-restore
 
     - name: Test
       run: dotnet test --no-build
