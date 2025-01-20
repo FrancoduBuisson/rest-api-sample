@@ -13,7 +13,7 @@ namespace SampleRestApi.Controllers
     [HttpGet]
     public IActionResult Get()
     {
-      return Ok(new { message = "Hello World!" });
+      return Ok(new { message = "Hello World! (FRANCO)" });
     }
   }
 }
